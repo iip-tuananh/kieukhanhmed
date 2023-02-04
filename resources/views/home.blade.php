@@ -263,7 +263,7 @@
                <div class="col medium-6 small-12 large-6">
                   <div class="col-inner">
                      <h2 style="color: #0a2453; font-size: 30px;">GIỚI THIỆU</h2>
-                     {!!$aboutUs->content!!}
+                     {!!$aboutUs->description!!}
                   </div>
                </div>
                <div class="col medium-6 small-12 large-6">
