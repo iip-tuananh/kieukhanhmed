@@ -170,7 +170,7 @@
          <br>
          <br>
       </div>
-      <section class="section section_du_an" id="section_809640129">
+      {{-- <section class="section section_du_an" id="section_809640129">
          <div class="bg section-bg fill bg-fill  bg-loaded">
             <div class="section-bg-overlay absolute fill"></div>
          </div>
@@ -199,7 +199,7 @@
             background-color: rgb(244, 239, 239);
             }
          </style>
-      </section>
+      </section> --}}
       {{-- section theo danh mục --}}
       @foreach ($categoryhome as $cate)
       @if(count($cate->product)>0)
