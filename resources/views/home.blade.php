@@ -36,7 +36,7 @@
             &#34;parallax&#34; : 0,
             &#34;friction&#34;: 0.6        }">
             @foreach ($banners as $img)
-               <div  style="background-image:url({{url($img->image)}});  object-fit: cover;background-repeat: no-repeat;" class="banner has-hover home-banner" id="banner-1518171214">
+               <div  style="background-image:url({{url($img->image)}});  object-fit: cover;background-repeat: no-repeat;background-size:contain;" class="banner has-hover home-banner" id="banner-1518171214" >
                   <div class="banner-inner fill home-banner">
                      <div class="banner-bg fill">
                         <div class="bg fill bg-fill "></div>
