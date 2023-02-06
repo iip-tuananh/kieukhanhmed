@@ -200,3 +200,11 @@ padding: 10px 10px;
 span.section-title-main {
     color: #00306b;
 }
+@media only screen and (max-width: 768px) {
+    #top-bar{
+        display: none;
+    }
+    #slider-197494817 .flickity-viewport {
+        height: 322px !important;
+    }
+}
