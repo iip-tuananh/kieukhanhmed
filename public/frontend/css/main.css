@@ -178,7 +178,7 @@ padding: 10px 10px;
     background-color: rgb(255 255 255) !important;
 }
 #slider-197494817 .flickity-viewport{
-    height: 475px !important;
+    height: auto !important;
 }
 .row.content-row.mb-0 {
     box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px, rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px, rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
@@ -205,6 +205,9 @@ span.section-title-main {
         display: none;
     }
     #slider-197494817 .flickity-viewport {
-        height: 322px !important;
+        height: 163px !important;
     }
+}
+@media only screen and (max-width:1120px){
+    
 }
