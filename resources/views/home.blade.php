@@ -36,51 +36,49 @@
             &#34;parallax&#34; : 0,
             &#34;friction&#34;: 0.6        }">
             @foreach ($banners as $img)
-               <div  style="background-image:url({{url($img->image)}});  object-fit: cover;background-repeat: no-repeat;background-size:contain;" class="banner has-hover home-banner" id="banner-1518171214" >
-                  <div class="banner-inner fill home-banner">
-                     <div class="banner-bg fill">
-                        <div class="bg fill bg-fill "></div>
-                     </div>
-                     <!-- bg-layers -->
-                     <div class="banner-layers container">
-                        <div class="fill banner-link"></div>
-                        <div id="text-box-117204958" class="text-box banner-layer x5 md-x5 lg-x5 y35 md-y35 lg-y35 res-text">
-                           <div data-animate="flipInY">
-                              <div class="text dark">
-                                 <div class="text-inner text-center">
-                                 </div>
-                              </div>
-                              <!-- text-box-inner -->
-                           </div>
-                           <style scope="scope">
-                              #text-box-117204958 {
-                              width: 83%;
-                              }
-                              #text-box-117204958 .text {
-                              font-size: 100%;
-                              }
-                           </style>
-                        </div>
-                        <!-- text-box -->
-                     </div>
-                     <!-- .banner-layers -->
+            <div  style="background-image:url({{url($img->image)}});  object-fit: cover;background-repeat: no-repeat;background-size:contain;" class="banner has-hover home-banner" id="banner-1518171214" >
+               <div class="banner-inner fill home-banner">
+                  <div class="banner-bg fill">
+                     <div class="bg fill bg-fill "></div>
                   </div>
-                  <!-- .banner-inner -->
-                  <style scope="scope">
-                     #banner-1518171214 {
-                     padding-top: 30%;
-                     }
-                     .home-banner {
-                        height: 700px;
-                        background-size: cover;
-                        object-fit: cover;
-                     }
-                    
-                  </style>
+                  <!-- bg-layers -->
+                  <div class="banner-layers container">
+                     <div class="fill banner-link"></div>
+                     <div id="text-box-117204958" class="text-box banner-layer x5 md-x5 lg-x5 y35 md-y35 lg-y35 res-text">
+                        <div data-animate="flipInY">
+                           <div class="text dark">
+                              <div class="text-inner text-center">
+                              </div>
+                           </div>
+                           <!-- text-box-inner -->
+                        </div>
+                        <style scope="scope">
+                           #text-box-117204958 {
+                           width: 83%;
+                           }
+                           #text-box-117204958 .text {
+                           font-size: 100%;
+                           }
+                        </style>
+                     </div>
+                     <!-- text-box -->
+                  </div>
+                  <!-- .banner-layers -->
                </div>
+               <!-- .banner-inner -->
+               <style scope="scope">
+                  #banner-1518171214 {
+                  padding-top: 30%;
+                  }
+                  .home-banner {
+                  height: 700px;
+                  background-size: cover;
+                  object-fit: cover;
+                  }
+               </style>
+            </div>
             @endforeach
             <!-- .banner -->
-          
             <!-- .banner -->
          </div>
          <div class="loading-spin dark large centered"></div>
@@ -143,7 +141,7 @@
             <div class="col small-12 large-12">
                <div class="col-inner">
                   <div class="row large-columns-4 medium-columns-4 small-columns-2 row-xsmall slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 3000}">
-                  @foreach ($partner as $item)
+                     @foreach ($partner as $item)
                      <div class="gallery-col col ">
                         <div class="col-inner col-custom">
                            <a  href="{{route('detailDoitac',['id'=>$item->id])}}" >
@@ -162,7 +160,7 @@
                         </div>
                         <!-- .col-inner -->
                      </div>
-                  @endforeach
+                     @endforeach
                   </div>
                </div>
             </div>
@@ -184,7 +182,7 @@
             <!-- .section-title -->
             <div class="row large-columns-4 medium-columns- small-columns-2 row-small has-shadow row-box-shadow-2 row-box-shadow-5-hover slider row-slider slider-nav-reveal slider-nav-push custom-slide" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 4000}">
                @foreach ($sanphams as $pro)
-                  @include('layouts.product.item',['product'=>$pro])
+               @include('layouts.product.item',['product'=>$pro])
                @endforeach
                <!-- .col -->
                <!-- .col -->
@@ -202,6 +200,41 @@
             }
          </style>
       </section>
+      {{-- section theo danh mục --}}
+      @foreach ($categoryhome as $cate)
+      @if(count($cate->product)>0)
+      <section class="section section_du_an" id="section_809640129">
+         <div class="bg section-bg fill bg-fill  bg-loaded">
+            <div class="section-bg-overlay absolute fill"></div>
+         </div>
+         <!-- .section-bg -->
+         <div class="section-content relative">
+            <div class="container section-title-container">
+               <h3 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:144%;"><i class="icon-menu"></i>{{languageName($cate->name)}}</span><b></b></h3>
+            </div>
+            <!-- .section-title -->
+            <div class="row large-columns-4 medium-columns- small-columns-2 row-small has-shadow row-box-shadow-2 row-box-shadow-5-hover slider row-slider slider-nav-reveal slider-nav-push custom-slide" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 4000}">
+               @foreach ($cate->product as $pro)
+               @include('layouts.product.item',['product'=>$pro])
+               @endforeach
+               <!-- .col -->
+               <!-- .col -->
+            </div>
+         </div>
+         <!-- .section-content -->
+         <style scope="scope">
+            #section_809640129 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #1C3254;
+            }
+            #section_809640129 .section-bg-overlay {
+            background-color: rgb(244, 239, 239);
+            }
+         </style>
+      </section>
+      @endif
+      @endforeach
       <section class="section" id="section_1167794065">
          <div class="bg section-bg fill bg-fill  bg-loaded">
          </div>
@@ -352,7 +385,7 @@
                      </div>
                      <!-- .section-title -->
                      <div class="row large-columns-3 medium-columns-1 small-columns-1 slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: true, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 4000}">
-                     @foreach ($blog as $item)
+                        @foreach ($blog as $item)
                         <div class="col post-item">
                            <div class="col-inner">
                               <a href="{{route('detailBlog',['slug'=>$item->slug])}}" class="plain">
@@ -366,7 +399,6 @@
                                     <div class="box-text text-center">
                                        <div class="box-text-inner blog-post-inner">
                                           <h5 class="post-title is-large uppercase">{{languageName($item->title)}}</h5>
-                                          
                                           <div class="is-divider"></div>
                                           <br>
                                           <p class="from_the_blog_excerpt limit-text-3">{{languageName($item->description)}}</p>
@@ -381,9 +413,8 @@
                            </div>
                            <!-- .col-inner -->
                         </div>
-                     @endforeach
+                        @endforeach
                         <!-- .col -->
-                      
                      </div>
                   </div>
                </div>
@@ -407,7 +438,6 @@
          <div class="bg section-bg fill bg-fill  bg-loaded">
          </div>
          <!-- .section-bg -->
-      
          <!-- .section-content -->
          <style scope="scope">
             #section_662257082 {
