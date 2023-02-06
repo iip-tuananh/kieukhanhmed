@@ -161,4 +161,8 @@ class PageController extends Controller
         $data['detail_service'] = Services::where(['slug'=>$slug , 'status'=>1])->first();
         return view('service.detail',$data);
     }
+    public function detailDoitac($id){
+        $data['detailDoitac'] = Partner::where('id', $id)->first();
+        return view('detailPartner',$data);
+    }
 }

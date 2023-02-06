@@ -128,6 +128,50 @@
             }
          </style>
       </section>
+      <br>
+      <div class="section-content relative">
+         <div class="row align-center" id="row-2070226963">
+            <div class=" medium-10 small-12 large-10">
+               <div class="container section-title-container">
+                  <h3 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:150%;color:rgb(0, 48, 107);">Đối tác công ty</span><b></b></h3>
+               </div>
+            </div>
+            <style scope="scope">
+            </style>
+         </div>
+         <div class="row row-collapse align-center" id="row-717999527">
+            <div class="col small-12 large-12">
+               <div class="col-inner">
+                  <div class="row large-columns-4 medium-columns-4 small-columns-2 row-xsmall slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 3000}">
+                  @foreach ($partner as $item)
+                     <div class="gallery-col col ">
+                        <div class="col-inner col-custom">
+                           <a  href="{{route('detailDoitac',['id'=>$item->id])}}" >
+                              <div class="box has-hover gallery-box box-default">
+                                 <div class="box-image" style="padding-left: 20px">
+                                    <img width="170" height="90" src="{{$item->image}}" class="attachment-medium size-medium" alt="" ids="1355,1356,1357,1358,1359,1360" style="default" type="slider" col_spacing="xsmall" columns="6" auto_slide="3000"/>                                                              
+                                 </div>
+                                 <!-- .image -->
+                                 <div class="box-text text-left">
+                                    <p></p>
+                                 </div>
+                                 <!-- .text -->
+                              </div>
+                              <!-- .box -->
+                           </a>
+                        </div>
+                        <!-- .col-inner -->
+                     </div>
+                  @endforeach
+                  </div>
+               </div>
+            </div>
+            <style scope="scope">
+            </style>
+         </div>
+         <br>
+         <br>
+      </div>
       <section class="section section_du_an" id="section_809640129">
          <div class="bg section-bg fill bg-fill  bg-loaded">
             <div class="section-bg-overlay absolute fill"></div>
@@ -363,49 +407,7 @@
          <div class="bg section-bg fill bg-fill  bg-loaded">
          </div>
          <!-- .section-bg -->
-         <div class="section-content relative">
-            <div class="row align-center" id="row-2070226963">
-               <div class=" medium-10 small-12 large-10">
-                  <div class="container section-title-container">
-                     <h3 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:150%;color:rgb(0, 48, 107);">Đối tác công ty</span><b></b></h3>
-                  </div>
-               </div>
-               <style scope="scope">
-               </style>
-            </div>
-            <div class="row row-collapse align-center" id="row-717999527">
-               <div class="col small-12 large-12">
-                  <div class="col-inner">
-                     <div class="row large-columns-4 medium-columns-4 small-columns-2 row-xsmall slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 3000}">
-                     @foreach ($partner as $item)
-                        <div class="gallery-col col">
-                           <div class="col-inner">
-                              <a class="image-lightbox lightbox-gallery" href="javascript:;" title="">
-                                 <div class="box has-hover gallery-box box-default">
-                                    <div class="box-image" style="padding-left: 20px">
-                                       <img width="170" height="90" src="{{$item->image}}" class="attachment-medium size-medium" alt="" ids="1355,1356,1357,1358,1359,1360" style="default" type="slider" col_spacing="xsmall" columns="6" auto_slide="3000"/>                                                              
-                                    </div>
-                                    <!-- .image -->
-                                    <div class="box-text text-left">
-                                       <p></p>
-                                    </div>
-                                    <!-- .text -->
-                                 </div>
-                                 <!-- .box -->
-                              </a>
-                           </div>
-                           <!-- .col-inner -->
-                        </div>
-                     @endforeach
-                     </div>
-                  </div>
-               </div>
-               <style scope="scope">
-               </style>
-            </div>
-            <br>
-            <br>
-         </div>
+      
          <!-- .section-content -->
          <style scope="scope">
             #section_662257082 {

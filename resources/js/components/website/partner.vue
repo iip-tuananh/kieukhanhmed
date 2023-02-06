@@ -25,7 +25,7 @@
                       class="w-100"
                     />
                   </div>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label>Link</label>
                     <vs-input
                       type="text"
@@ -34,6 +34,10 @@
                       placeholder="Link liên kết với đối tác (bỏ trống nếu không có)"
                       class="w-100"
                     />
+                  </div> -->
+                  <div class="form-group">
+                    <label>Nội dung</label>
+                    <TinyMce v-model="item.link" />
                   </div>
                   <div class="form-group">
                     <label>Trạng thái</label>
@@ -60,6 +64,7 @@
 <script>
 import { mapActions } from "vuex";
 import { required } from "vuelidate/lib/validators";
+import TinyMce from "../_common/tinymce";
 export default {
   name: "product",
   data() {
@@ -74,7 +79,7 @@ export default {
       ] 
     };
   },
-  components: {},
+  components: {TinyMce},
   computed: {},
   watch: {},
   methods: {
