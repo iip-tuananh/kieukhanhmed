@@ -382,7 +382,7 @@
                            <div class="col-inner">
                               <a class="image-lightbox lightbox-gallery" href="javascript:;" title="">
                                  <div class="box has-hover gallery-box box-default">
-                                    <div class="box-image">
+                                    <div class="box-image" style="padding-left: 20px">
                                        <img width="170" height="90" src="{{$item->image}}" class="attachment-medium size-medium" alt="" ids="1355,1356,1357,1358,1359,1360" style="default" type="slider" col_spacing="xsmall" columns="6" auto_slide="3000"/>                                                              
                                     </div>
                                     <!-- .image -->
