@@ -365,10 +365,9 @@
          <!-- .section-bg -->
          <div class="section-content relative">
             <div class="row align-center" id="row-2070226963">
-               <div class="col medium-10 small-12 large-10">
-                  <div class="col-inner text-center" style="padding:2px 0px 0px 0px;">
-                     <div class="gap-element" style="display:block; height:auto; padding-top:6px" class="clearfix"></div>
-                     <h2 class="uppercase"><span style="font-size: 140%;color:#0a2453;">Đối tác công ty</span></h2>
+               <div class=" medium-10 small-12 large-10">
+                  <div class="container section-title-container">
+                     <h3 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:150%;color:rgb(0, 48, 107);">Đối tác công ty</span><b></b></h3>
                   </div>
                </div>
                <style scope="scope">
