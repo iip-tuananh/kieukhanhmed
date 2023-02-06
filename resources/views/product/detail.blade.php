@@ -178,7 +178,7 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
             </div>
             <!-- .product-main -->
             <div class="product-footer">
-               <div class="container">
+               <div class="container product-custom">
                   <div class="woocommerce-tabs container tabbed-content">
                      <ul class="product-tabs  nav small-nav-collapse tabs nav nav-uppercase nav-line nav-left">
                      </ul>

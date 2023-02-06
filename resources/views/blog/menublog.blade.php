@@ -1,5 +1,5 @@
 <aside id="flatsome_recent_posts-17" class="widget flatsome_recent_posts" style="font-size: 16px">
-    <span class="widget-title "><span>TIN TỨC NỔI BẬT</span></span>
+    <span class="widget-title " style="color: white"><span>TIN TỨC NỔI BẬT</span></span>
     <div class="is-divider small"></div>
     <ul>
        @foreach ($hotBlogs as $item)

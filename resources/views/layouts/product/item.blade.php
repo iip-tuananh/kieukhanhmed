@@ -14,11 +14,11 @@ $img = json_decode($pro->images);
                <!-- box-image -->
                <div class="box-text text-center">
                   <div class="box-text-inner">
-                     <h5 class=" ">
+                     <h5 class="style-h5 ">
                        {{languageName($pro->name)}}                     
                      </h5>
-                     <h6 style="color:red">
-                     {{number_format($pro->price,0,'','.')}}VNĐ
+                     <h6 class="style-h6" >
+                    Xem thêm
                   </h6>
                   </div>
                   <!-- .box-text-inner -->
