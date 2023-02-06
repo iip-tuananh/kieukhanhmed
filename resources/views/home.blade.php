@@ -376,7 +376,7 @@
             <div class="row row-collapse align-center" id="row-717999527">
                <div class="col small-12 large-12">
                   <div class="col-inner">
-                     <div class="row large-columns-6 medium-columns-3 small-columns-2 row-xsmall slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 3000}">
+                     <div class="row large-columns-4 medium-columns-4 small-columns-2 row-xsmall slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 3000}">
                      @foreach ($partner as $item)
                         <div class="gallery-col col">
                            <div class="col-inner">
