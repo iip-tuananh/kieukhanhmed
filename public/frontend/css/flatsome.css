@@ -5646,7 +5646,8 @@ span.widget-title {
 .is-uppercase,
 .uppercase {
     line-height: 1.2;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .is-alt-font,
@@ -10140,4 +10141,4 @@ li.wc-layered-nav-rating .star-rating {
 }
 div#masthead {
     background-color: #4ca996;
-}
+}   

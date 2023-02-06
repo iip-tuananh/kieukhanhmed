@@ -200,9 +200,9 @@
                               </div>
                            </div>
                         </div>
-                        <div class="icon-box-text last-reset">
-                           <h5 class="uppercase">TIÊU CHUẨN GMP-WHO</h5>
-                           <p>Nhà máy sản xuất thuốc từ dược liệu đạt tiêu chuẩn GMP-WHO đặt tại tổ 1, khu 1, phường Việt Hưng, TP Hạ Long.</p>
+                        <div class="icon-box-text last-reset" style="text-align:center">
+                           <h5 class="uppercase">TIÊU CHUẨN EU_GMP</h5>
+                           <p>Nhà máy sản xuất thuốc từ dược liệu đạt tiêu chuẩn GMP-WHO </p>
                         </div>
                      </div>
                      <!-- .icon-box -->
