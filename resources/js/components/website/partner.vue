@@ -115,7 +115,7 @@ export default {
           this.objData = [
             {
               name:"",
-              image: "",
+              image: "",  
               status:"",
               link:""
             }
