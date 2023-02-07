@@ -96,14 +96,14 @@ export default {
               name: "Danh mục sản phẩm",
               path: "/product/category",
             },
-            {
-              name: "Phân loại cấp 1",
-              path: "/product/type",
-            },
-            {
-              name: "Phân loại cấp 2",
-              path: "/product/typetwo",
-            },
+            // {
+            //   name: "Phân loại cấp 1",
+            //   path: "/product/type",
+            // },
+            // {
+            //   name: "Phân loại cấp 2",
+            //   path: "/product/typetwo",
+            // },
             {
               name: "Danh sách sản phẩm",
               path: "/product",
@@ -126,10 +126,10 @@ export default {
           name: "Quản lý tin tức",
           route_name: "",
           sub: [
-            {
-              name: "Danh mục bài viết",
-              path: "/blog/category",
-            },
+            // {
+            //   name: "Danh mục bài viết",
+            //   path: "/blog/category",
+            // },
             {
               name: "Danh sách bài viết",
               path: "/blogs",
@@ -175,10 +175,10 @@ export default {
               name: "Quản lý đối tác",
               path: "/partner",
             },
-            {
-              name: "Thư viện ảnh",
-              path: "/prize",
-            },
+            // {
+            //   name: "Thư viện ảnh",
+            //   path: "/prize",
+            // },
             // {
             //   name: "Quản lý video",
             //   path: "/video",
@@ -223,17 +223,17 @@ export default {
         //     }
         //   ],
         // },
-        {
-          icon: "mdi mdi-shopping-music menu-icon",
-          name: "Quản lý tin nhắn liên hệ",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách",
-              path: "/messcontact",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-shopping-music menu-icon",
+        //   name: "Quản lý tin nhắn liên hệ",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách",
+        //       path: "/messcontact",
+        //     }
+        //   ],
+        // },
         // {
         //   icon: "mdi mdi-newspaper menu-icon",
         //   name: "Quản lý Review",

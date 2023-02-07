@@ -74,7 +74,7 @@
                 <label>Ảnh sản phẩm</label>
                 <ImageMulti v-model="objData.images" :title="'san-pham'"/> 
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Giá Sản phẩm</label>
                 <vs-input
                   type="number"
@@ -83,8 +83,8 @@
                   class="w-100"
                   v-model="objData.price"
                 />
-              </div>
-              <div class="form-group">
+              </div> -->
+              <!-- <div class="form-group">
                 <label>Phần trăm giảm giá</label>
                 <vs-input
                   type="number"
@@ -93,7 +93,7 @@
                   class="w-100"
                   v-model="objData.discount"
                 />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -103,8 +103,8 @@
               <div class="form-group">
                 <label>Trạng thái</label>
                 <vs-select v-model="objData.status">
-                  <vs-select-item value="1" text="Còn hàng" />
-                  <vs-select-item value="0" text="Hết hàng" />
+                  <vs-select-item value="1" text="Hiện" />
+                  <vs-select-item value="0" text="Ẩn" />
                 </vs-select>
               </div>
               <div class="form-group">
@@ -127,7 +127,7 @@
                   />
                 </vs-select>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Phân loại cấp 1</label>
                 <vs-select
                   class="selectExample"
@@ -159,7 +159,7 @@
                     :key="'v' + index"
                   />
                 </vs-select>
-              </div>
+              </div> -->
               <!-- <div class="form-group">
                 <label>Thông số kỹ thuật</label>
                 <div v-for="(item, index) in objData.size" :key="index">
@@ -227,13 +227,13 @@
                   >Thêm khuyến mãi</el-button
                 >
               </div> -->
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Sản phẩm nổi bật trang chủ</label>
                 <vs-select v-model="objData.discountStatus">
                   <vs-select-item value="1" text="Có" />
                   <vs-select-item value="0" text="Không" />
                 </vs-select>
-              </div>
+              </div> -->
             </div>
           </div> 
         </div>
