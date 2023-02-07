@@ -200,12 +200,17 @@ padding: 10px 10px;
 span.section-title-main {
     color: #00306b;
 }
+
 @media only screen and (max-width: 768px) {
     #top-bar{
         display: none;
     }
     #slider-197494817 .flickity-viewport {
-        height: 313px !important;
+        height: 165px !important;
+    }
+    .custom-tiede{
+        height: 48px;
+        font-size: 9px;
     }
 }
 @media only screen and (max-width:1120px){

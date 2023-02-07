@@ -87,14 +87,14 @@
          </style>
       </div>
       <!-- .ux-slider-wrapper -->
-      <section class="section dark hide-for-medium" id="section_333663925">
+      <section class="section dark " id="section_333663925">
          <div class="bg section-bg fill bg-fill  bg-loaded">
             <div class="section-bg-overlay absolute fill"></div>
             <div class="is-border" style="border-color:rgb(235, 235, 235);border-width:0px 0px 0px 0px;">
             </div>
          </div>
          <!-- .section-bg -->
-         <div class="section-content relative">
+         <div class="section-content relative custom-tiede">
             <div class="row row-large align-middle align-center" id="row-191841372">
                <div class="col medium-8 small-12 large-8" data-animate="fadeInLeft">
                   <div class="col-inner text-center dark" style="padding:10px 0px 0px 0px;">
@@ -102,7 +102,7 @@
                         ">SÁNG TẠO SẢN PHẨM XANH – CHĂM SÓC SỨC KHỎE CON NGƯỜI</h2>
                   </div>
                </div>
-               <div class="col medium-4 small-12 large-4" data-animate="fadeInRight">
+               <div class="col medium-4 small-12 large-4 hide-for-medium" data-animate="fadeInRight">
                   <div class="col-inner text-center" style="background-color:rgba(255, 255, 255, 0);padding:10px 0px 0px 0px;">
                      <a href="{{route('aboutUs')}}" target="_self" class="button secondary">
                      <span>SỨ MỆNH CÔNG TY</span>
