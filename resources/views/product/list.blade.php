@@ -62,7 +62,7 @@ Danh sách {{$title}}
                <span class="widget-title shop-sidebar" style="background-color: #4ca996">LOẠI SẢN PHẨM</span>
                <div class="is-divider small"></div>
                <select name="select" class="select-option">
-                  {{-- <option value="">Chọn danh mục </option> --}}
+                  <option value="">Chọn danh mục </option>
                   @foreach ($categoryhome as $cate)
                      <option  value="{{route('allListProCate',['cate'=>$cate->slug])}}">
                         {{languageName($cate->name)}}
