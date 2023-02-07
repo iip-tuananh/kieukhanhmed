@@ -210,7 +210,7 @@
          <!-- .section-bg -->
          <div class="section-content relative">
             <div class="container section-title-container">
-               <h3 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:144%;"><i class="icon-menu"></i><a href="{{route('allListProCate',['cate'=>$cate->slug])}}">{{languageName($cate->name)}}</a></span><b></b></h3>
+               <h3 class="section-title section-title-center"><b></b><span class="section-title-main" style="font-size:144%;"><a href="{{route('allListProCate',['cate'=>$cate->slug])}}"><i class="icon-menu"></i>{{languageName($cate->name)}}</a></span><b></b></h3>
             </div>
             <!-- .section-title -->
             <div class="row large-columns-4 medium-columns- small-columns-2 row-small has-shadow row-box-shadow-2 row-box-shadow-5-hover slider row-slider slider-nav-reveal slider-nav-push custom-slide" data-flickity-options="{&#34;imagesLoaded&#34;: true, &#34;groupCells&#34;: &#34;100%&#34;, &#34;dragThreshold&#34; : 5, &#34;cellAlign&#34;: &#34;left&#34;,&#34;wrapAround&#34;: true,&#34;prevNextButtons&#34;: true,&#34;percentPosition&#34;: true,&#34;pageDots&#34;: false, &#34;rightToLeft&#34;: false, &#34;autoPlay&#34; : 4000}">
