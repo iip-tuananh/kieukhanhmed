@@ -243,7 +243,7 @@
                         <li class="menu-item menu-item-type-post_type_archive menu-item-object-product menu-item-1703"><a href="{{route('allProduct')}}" class="nav-top-link">SẢN PHẨM</a><button class="click-open-menu"><span><i class="fa-solid fa-plus"></i></span></button>
                            <ul class="ul-custom" style="display: none">
                               @foreach ($categoryhome as $item)
-                               <li class="li-custom"><a href="">{{languageName($item->name)}}</a></li>
+                               <li class="li-custom"><a href="{{route('allListProCate',['cate'=>$item->slug])}}">{{languageName($item->name)}}</a></li>
                               @endforeach
                               <br>
                            </ul>
