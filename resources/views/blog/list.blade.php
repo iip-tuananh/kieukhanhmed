@@ -18,7 +18,7 @@
       <div class="row row-large row-divided ">
          <div class="large-9 col">
             <div class="row large-columns-1 medium-columns- small-columns-1">
-               @foreach ($blog as $item)
+               @foreach ($blogs as $item)
                   <div class="col post-item" >
                      <div class="col-inner">
                         <a href="{{route('detailBlog',['slug'=>$item->slug])}}" class="plain">

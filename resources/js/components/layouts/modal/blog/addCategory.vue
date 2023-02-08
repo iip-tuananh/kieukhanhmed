@@ -23,14 +23,14 @@
           </div>
         </div>
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
         <vs-input
           class="w-100"
           v-model="objData.path"
           font-size="40px"
           label-placeholder="Link"
         />
-      </div>
+      </div> -->
       <div class="form-group">
         <label for="exampleSelectGender">Avatar</label>
         <image-upload v-model="objData.avatar" type="avatar" :title="'category-blog'"></image-upload>

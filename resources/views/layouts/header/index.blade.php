@@ -89,7 +89,10 @@
                      </ul>
                   </li>
                   <li id="menu-item-1926" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-1926"><a href="{{route('listService')}}" class="nav-top-link">DỊCH VỤ</a></li>
-                  <li id="menu-item-535" class="menu-item menu-item-type-taxonomy menu-item-object-category  menu-item-535"><a href="{{route('allListBlog')}}" class="nav-top-link">TIN TỨC</a></li>
+                  @foreach ($blogCate as $blog)
+                     <li id="menu-item-535" class="menu-item menu-item-type-taxonomy menu-item-object-category  menu-item-535"><a href="{{route('listCateBlog',['slug'=>$blog->slug])}}" class="nav-top-link" style="text-transform: uppercase">{{languageName($blog->name)}}</a></li>
+                  @endforeach
+              
                   <li class="html header-button-1">
                      <div class="header-button">
                         <a href="tel:{{$setting->phone1}}" class="button plain is-outline" style="border-radius:99px;">

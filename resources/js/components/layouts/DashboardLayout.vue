@@ -123,13 +123,13 @@ export default {
         },
         {
           icon: "mdi mdi-newspaper menu-icon",
-          name: "Quản lý tin tức",
+          name: "Tin tức - Tuyển dụng",
           route_name: "",
           sub: [
-            // {
-            //   name: "Danh mục bài viết",
-            //   path: "/blog/category",
-            // },
+            {
+              name: "Danh mục bài viết",
+              path: "/blog/category",
+            },
             {
               name: "Danh sách bài viết",
               path: "/blogs",
