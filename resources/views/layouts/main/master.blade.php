@@ -57,6 +57,7 @@
                <link rel="stylesheet" id="wc-block-style-css" href="{{asset('frontend/css/style.css')}}" type="text/css" media="all"/>
                <link rel="stylesheet" id="contact-form-7-css" href="{{asset('frontend/css/styles.css')}}" type="text/css" media="all"/>
                <link rel="stylesheet" href="{{asset('frontend/css/main.css')}}">
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                <style id="woocommerce-inline-inline-css" type="text/css">
                   .woocommerce form .form-row .required { visibility: visible; }
                </style>
@@ -239,7 +240,15 @@
                            
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-74 current_page_item menu-item-341"><a href="{{route('home')}}" class="nav-top-link">TRANG CHỦ</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-343"><a href="{{route('aboutUs')}}" class="nav-top-link">GIỚI THIỆU</a></li>
-                        <li class="menu-item menu-item-type-post_type_archive menu-item-object-product menu-item-1703"><a href="{{route('allProduct')}}" class="nav-top-link">SẢN PHẨM</a></li>
+                        <li class="menu-item menu-item-type-post_type_archive menu-item-object-product menu-item-1703"><a href="{{route('allProduct')}}" class="nav-top-link">SẢN PHẨM</a><button class="click-open-menu"><span><i class="fa-solid fa-plus"></i></span></button>
+                           <ul class="ul-custom" style="display: none">
+                              @foreach ($categoryhome as $item)
+                               <li class="li-custom"><a href="">{{languageName($item->name)}}</a></li>
+                              @endforeach
+                              <br>
+                           </ul>
+                        </li>
+                    
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1926"><a href="{{route('listService')}}" class="nav-top-link">DỊCH VỤ</a></li>
                         @foreach ($blogCate as $blog)
                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-535"><a href="{{route('listCateBlog',['slug'=>$blog->slug])}}" class="nav-top-link"style="text-transform: uppercase">{{languageName($blog->name)}}</a></li>
@@ -257,26 +266,8 @@
                   <div class="woocommerce-notices-wrapper"></div>
                   <div class="account-container lightbox-inner">
                      <div class="account-login-inner">
-                        <h3 class="uppercase">Đăng nhập</h3>
-                        <form class="woocommerce-form woocommerce-form-login login" method="post">
-                           <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                              <label for="username">Tên tài khoản hoặc địa chỉ email <span class="required">*</span></label>
-                              <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value=""/>				
-                           </p>
-                           <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                              <label for="password">Mật khẩu <span class="required">*</span></label>
-                              <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password"/>
-                           </p>
-                           <p class="form-row">
-                              <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="3c27c66f9f"/><input type="hidden" name="_wp_http_referer" value="/"/>					<button type="submit" class="woocommerce-Button button" name="login" value="Đăng nhập">Đăng nhập</button>
-                              <label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
-                              <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"/> <span>Ghi nhớ mật khẩu</span>
-                              </label>
-                           </p>
-                           <p class="woocommerce-LostPassword lost_password">
-                              <a href="http://duocquangninh.vn/lost-password/">Quên mật khẩu?</a>
-                           </p>
-                        </form>
+              
+        
                      </div>
                      <!-- .login-inner -->
                   </div>
@@ -341,6 +332,13 @@
                   var wc_password_strength_meter_params = {"min_password_strength":"3","stop_checkout":"","i18n_password_error":"Vui l\u00f2ng nh\u1eadp m\u1eadt kh\u1ea9u kh\u00f3 h\u01a1n.","i18n_password_hint":"G\u1ee3i \u00fd: M\u1eadt kh\u1ea9u ph\u1ea3i c\u00f3 \u00edt nh\u1ea5t 12 k\u00fd t\u1ef1. \u0110\u1ec3 n\u00e2ng cao \u0111\u1ed9 b\u1ea3o m\u1eadt, s\u1eed d\u1ee5ng ch\u1eef in hoa, in th\u01b0\u1eddng, ch\u1eef s\u1ed1 v\u00e0 c\u00e1c k\u00fd t\u1ef1 \u0111\u1eb7c bi\u1ec7t nh\u01b0 ! \" ? $ % ^ & )."};
                   /* ]]> */
                </script>
+                   <script>
+                         $(".click-open-menu").click(function(){
+                           $(".ul-custom").toggle();
+                           $(".fa-solid").toggleClass("fa-minus");
+                           });
+                                       
+                        </script>
                    
                {{-- <script type="text/javascript" src="./js/password-strength-meter-new.min.js"></script> --}}
             </body>
