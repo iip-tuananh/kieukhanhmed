@@ -241,7 +241,7 @@
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-343"><a href="{{route('aboutUs')}}" class="nav-top-link">GIỚI THIỆU</a></li>
                         <li class="menu-item menu-item-type-post_type_archive menu-item-object-product menu-item-1703"><a href="{{route('allProduct')}}" class="nav-top-link">SẢN PHẨM</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1926"><a href="{{route('listService')}}" class="nav-top-link">DỊCH VỤ</a></li>
-                        @foreach ($blogcate as $blog)
+                        @foreach ($blogCate as $blog)
                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-535"><a href="{{route('listCateBlog',['slug'=>$blog->slug])}}" class="nav-top-link"style="text-transform: uppercase">{{languageName($blog->name)}}</a></li>
                         @endforeach
                         
