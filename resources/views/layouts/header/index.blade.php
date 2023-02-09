@@ -12,12 +12,20 @@
                            {{$setting->email}}			       </span>
                            </a>
                         </li>
-                    
+                    @if($setting->phone1 != '')
                         <li class="">
                            <a href="tel:{{$setting->phone1}}" class="tooltip" title="{{$setting->phone1}}">
-                           <i class="icon-phone" style="font-size:12px;"></i>			      <span>{{$setting->phone1}}</span>
+                           <i class="icon-phone" style="font-size:12px;"></i><span>{{$setting->phone1}}</span>
                            </a>
                         </li>
+                     @endif
+                     @if($setting->phone2 != '')
+                     <li class="">
+                        <a href="tel:{{$setting->phone2}}" class="tooltip" title="{{$setting->phone2}}">
+                        <i class="icon-phone" style="font-size:12px;"></i><span>{{$setting->phone2}}</span>
+                        </a>
+                     </li>
+                  @endif
                      </ul>
                   </li>
                </ul>

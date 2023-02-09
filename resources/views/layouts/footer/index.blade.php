@@ -11,7 +11,10 @@
                <p><strong>Trụ sở chính: </strong><br/>
                {{$setting->address1}}<br/>
                @if($setting->phone1 != '')
-               <strong>Hotline </strong> :{{$setting->phone1}}<br/>
+               <strong>Hotline 1</strong> :{{$setting->phone1}}<br/>
+               @endif
+               @if($setting->phone2 != '')
+               <strong>Hotline 2 </strong> :{{$setting->phone2}}<br/>
                @endif
                @if($setting->email != '')
                   <strong>Email:</strong>  <a href="mailto:{{$setting->email}}">{{$setting->email}}</a>
