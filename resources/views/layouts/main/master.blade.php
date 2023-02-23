@@ -34,6 +34,7 @@
                <meta name="twitter:title" content="@yield('title')" />
                <meta name="twitter:description" content="@yield('description')" />
                <meta name="twitter:image" content="@yield('image')" />
+               <meta name="google-site-verification" content="PLJcjeV67apdg5SBYGKxjIgUFXAtAK2gEWvjQHvZVmw">
                <!-- Fav Icon -->
                <link rel="icon" href="{{url(''.$setting->favicon)}}" type="image/x-icon">
                <link rel="preconnect" href="https://fonts.googleapis.com">
