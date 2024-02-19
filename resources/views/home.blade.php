@@ -15,7 +15,7 @@
 @section('content')
 <main id="main" class="">
    <div id="content" role="main" class="content-area">
-      <div class="slider-wrapper relative " id="slider-197494817" style="background-color:rgb(0, 0, 0);">
+      <div class="slider-wrapper relative " style="background-color:rgb(0, 0, 0);">
          <div class="slider slider-nav-circle slider-nav-normal slider-nav-light slider-style-container slider-show-nav" data-flickity-options="{
             &#34;cellAlign&#34;: &#34;center&#34;,
             &#34;imagesLoaded&#34;: true,
@@ -36,55 +36,12 @@
             &#34;parallax&#34; : 0,
             &#34;friction&#34;: 0.6        }">
             @foreach ($banners as $img)
-            <div  style="background-image:url({{url($img->image)}});  object-fit: cover;background-repeat: no-repeat;background-size:contain;" class="banner has-hover home-banner" id="banner-1518171214" >
-               <div class="banner-inner fill home-banner">
-                  <div class="banner-bg fill">
-                     <div class="bg fill bg-fill "></div>
-                  </div>
-                  <!-- bg-layers -->
-                  <div class="banner-layers container">
-                     <div class="fill banner-link"></div>
-                     <div id="text-box-117204958" class="text-box banner-layer x5 md-x5 lg-x5 y35 md-y35 lg-y35 res-text">
-                        <div data-animate="flipInY">
-                           <div class="text dark">
-                              <div class="text-inner text-center">
-                              </div>
-                           </div>
-                           <!-- text-box-inner -->
-                        </div>
-                        <style scope="scope">
-                           #text-box-117204958 {
-                           width: 83%;
-                           }
-                           #text-box-117204958 .text {
-                           font-size: 100%;
-                           }
-                        </style>
-                     </div>
-                     <!-- text-box -->
-                  </div>
-                  <!-- .banner-layers -->
-               </div>
-               <!-- .banner-inner -->
-               <style scope="scope">
-                  #banner-1518171214 {
-                  padding-top: 30%;
-                  }
-                  .home-banner {
-                  height: 700px;
-                  background-size: cover;
-                  object-fit: cover;
-                  }
-               </style>
-            </div>
+            <img src="{{$img->image}}" alt="">
             @endforeach
             <!-- .banner -->
             <!-- .banner -->
          </div>
          <div class="loading-spin dark large centered"></div>
-         <style scope="scope">
-            #slider-197494817 .flickity-slider > *{ max-width: 1139px!important;}
-         </style>
       </div>
       <!-- .ux-slider-wrapper -->
       <section class="section dark " id="section_333663925">
