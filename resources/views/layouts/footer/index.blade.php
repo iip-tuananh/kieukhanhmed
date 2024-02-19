@@ -9,7 +9,7 @@
             <div class="textwidget">
                <p> </p>
                <p><strong>Trụ sở chính: </strong><br/>
-               {{$setting->address1}}<br/>
+               {{$setting->address1}}
                <p><strong>Văn Phòng Đại Diện: </strong><br/>
                   {{$setting->address2}}<br/>
                @if($setting->phone1 != '')
