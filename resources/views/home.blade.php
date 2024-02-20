@@ -160,7 +160,7 @@
       </section> --}}
       {{-- section theo danh mục --}}
       @foreach ($categoryhome as $cate)
-      @if(count($cate->product)>0)
+      {{-- @if(count($cate->product)>0) --}}
       <section class="section section_du_an" id="section_809640129">
          <div class="bg section-bg fill bg-fill  bg-loaded">
             <div class="section-bg-overlay absolute fill"></div>
@@ -191,7 +191,7 @@
             }
          </style>
       </section>
-      @endif
+      {{-- @endif --}}
       @endforeach
       <section class="section" id="section_1167794065">
          <div class="bg section-bg fill bg-fill  bg-loaded">
