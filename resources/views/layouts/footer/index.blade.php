@@ -10,10 +10,10 @@
                <p> </p>
                {{-- <p><strong>Trụ sở chính: </strong><br/>
                {{$setting->address1}} --}}
-               <p><strong>Văn Phòng Đại Diện: </strong><br/>
+               <p><strong>Văn Phòng Giao Dịch: </strong><br/>
                   {{$setting->address2}}<br/>
                @if($setting->phone1 != '')
-               <strong>Hotline 1</strong> :{{$setting->phone1}}<br/>
+               <strong>Hotline</strong> :{{$setting->phone1}}<br/>
                @endif
                @if($setting->phone2 != '')
                <strong>Hotline 2 </strong> :{{$setting->phone2}}<br/>
