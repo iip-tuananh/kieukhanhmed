@@ -50,7 +50,7 @@
                @endforeach
                <!-- .col -->
             </div>
-         
+            {{$blogs->links()}}
          </div>
          @else
          <div class="large-9 col" style="height: 600px">

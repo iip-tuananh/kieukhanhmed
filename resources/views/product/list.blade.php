@@ -46,10 +46,11 @@ Danh sách {{$title}}
             <div class="woocommerce-notices-wrapper"></div>
             <div class="products row row-small large-columns-4 medium-columns-3 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover">
                @foreach ($list as $item)
-             @include('layouts.product.item',['pro' => $item])
+                  @include('layouts.product.item',['pro' => $item])
                @endforeach
                <!-- col -->
             </div>
+            {{$list->links()}}
             <!-- row -->
          </div>
          <!-- shop container -->
