@@ -225,3 +225,22 @@ span.section-title-main {
 @media only screen and (max-width:1120px){
     
 }
+ul.pagination {
+    list-style: none;
+    display: inline-flex;
+}
+
+ul.pagination li {
+    width: 30px;
+    height: 30px;
+    /* background: #4ca996; */
+    margin-right: 12px;
+    text-align: center;
+    /* margin: auto; */
+    color: black;
+}
+
+li.page-item.active {
+    background: #4ca996;
+    color: white;
+}
