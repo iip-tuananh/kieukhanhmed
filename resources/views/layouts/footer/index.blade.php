@@ -12,10 +12,11 @@
                {{$setting->address1}} --}}
                <p><strong>Trụ Sở chính: </strong><br/>
                   {{$setting->address2}}<br/>
-               <p><strong>VPDD Miền Nam: </strong><br/>
-               {{$setting->address1}}<br/>
                <p><strong>VPDD Miền Bắc: </strong><br/>
                   {{$setting->linkpopup}}<br/>
+               <p><strong>VPDD Miền Nam: </strong><br/>
+               {{$setting->address1}}<br/>
+              
                @if($setting->phone1 != '')
                <strong>Hotline</strong> :{{$setting->phone1}}<br/>
                @endif
