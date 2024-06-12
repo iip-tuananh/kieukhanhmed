@@ -42,6 +42,15 @@
                   />
                 </div>
                 <div class="form-group">
+                  <label>Địa chỉ 2</label>
+                  <vs-input
+                    type="text"
+                    size="default"
+                    class="w-100"
+                    v-model="objData.linkpopup"
+                  />
+                </div>
+                <div class="form-group">
                   <label>Số hotline</label>
                   <vs-input
                     type="text"

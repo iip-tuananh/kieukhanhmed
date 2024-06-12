@@ -15,8 +15,7 @@
                <p><strong>VPDD Miền Nam: </strong><br/>
                {{$setting->address1}}<br/>
                <p><strong>VPDD Miền Bắc: </strong><br/>
-                  199/6 Hoàng Văn Thụ, P.8 Quận Phú nhuận, TP Hồ Chí Minh.
-                  Tel: Mr.Tùng 0982.051.009 | Mr.Dương 0943.869.096.<br/>
+                  {{$setting->linkpopup}}<br/>
                @if($setting->phone1 != '')
                <strong>Hotline</strong> :{{$setting->phone1}}<br/>
                @endif
